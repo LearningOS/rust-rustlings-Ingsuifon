@@ -23,6 +23,7 @@ fn num_sq<T: AsMut<U>, U: std::ops::Mul<Output = U> + Copy>(arg: &mut T) {
     *value = (*value) * (*value);
 }
 
+
 #[cfg(test)]
 mod tests {
     use super::*;
